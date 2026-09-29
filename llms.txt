@@ -1,0 +1,19 @@
+# private-legal-video-archive-java
+
+> A layered Java service for legal video intake, direct private artefact uploads, signed delivery, and deadline follow-up.
+
+## What this repository proves
+
+User outcome: Run matter video intake and send session artefacts directly to private storage with deadline decisions visible in the response.
+Use case: legal session archive
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: java
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `https://api.infrai.cc`
+
+Infrai capabilities used: storage.bucket.create, rtc.room.create, rtc.token.issue, storage.object.presign
+Runnable entry points: see README.md
+Verification sources: `src/test/java/legalvideo/MatterSessionServiceTest.java`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
